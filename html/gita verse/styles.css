@@ -1,0 +1,183 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #030f1d;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #030f1d;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 75px;
+    height: 80px;
+}
+.logo1 img {
+    width: 150px;
+    height: 35px;
+}
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffda79;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-image img {
+    max-width: 3000px;
+    border-radius: 15px;
+}
+
+.sanskrit-verse {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.instructions {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.instructions h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.instructions p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.controls, .actions, .translation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: #004E51;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+
+.button.click {
+    background-color: #006D5B;
+}
+
+.button.start {
+    background-color: #194D33;
+}
+
+.button.stop {
+    background-color: #4C1D1D;
+}
+
+.button.translation {
+    background-color: #BD3B3B;
+}
+
+.input {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 200px;
+    height: 15px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.display-area {
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    margin: 10px auto;
+    height: 100px;
+}
+.f1 {
+    display: flex;
+    justify-content: flex-start; /* or justify-content: flex-start; */
+    align-items: stretch;
+    background: #030f1d;
+    justify-items: flex-start; /* This property isn't needed for flex containers */
+    padding: 10px; /* Add padding for space inside the footer */
+    margin-top: 20px;
+    gap: 10px;/* Add margin for space outside the footer */
+}
+
+.f1 p {
+    color: #ffda79;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.f1 b {
+    color: #ffda79;
+    word-spacing: normal;
+}
+.f1 img{
+    width: 75px;
+    height: 80px;
+}
+
