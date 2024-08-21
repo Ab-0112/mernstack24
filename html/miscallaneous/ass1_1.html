@@ -1,139 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Navigation</title>
+  <style>
+    /* Basic styling for the navigation menu */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
 
-        header {
-            background-color: #E6F5FF;
-            padding: 10px;
-            text-align: left;
-        }
+    nav ul li {
+      float: left;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #00B8E6;
-        }
-        .logo img {
-            width: 75px;
-            height: 80px;
-        }
+    nav ul li a, .dropbtn {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-        nav {
-            text-align: center;
-            margin-top: 15px;
-        }
+    nav ul li a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+    }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
+    .dropdown {
+      display: inline-block;
+    }
 
-        .main-content {
-            padding: 20px;
-            background-color: #d8b819;
-        }
+    /* Dropdown container styling */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
 
-        .main-content h2 {
-            text-align: center;
-            color: #333;
-        }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
 
-        .main-content p {
-            text-align: right;
-            margin: 0 10%;
-            text-indent: initial;
-        }
-        .main-content img {
-            width: 150px;
-            height: 150px;
-            image-orientation: inherit;
-        }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
 
-        .icons {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px 10%;
-        }
-
-        .icon {
-            text-align: center;
-            width: 100px;
-            font-weight: bold;
-        }
-
-        .icon img {
-            width: 150px;
-            height: 150px;
-            flex-direction: column;
-            align-items: left;
-            
-        }
-
-        @media only screen and (max-width: 768px) {
-            nav a {
-                display: block;
-                margin: 5px 0;
-            }
-
-            .main-content p {
-                margin: 0 5%;
-            }
-
-            .icons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .icon {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    /* Show the dropdown menu when hovering */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>GitaLokam</h1>
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Art</a>
-            <a href="#">Branches</a>
-            <a href="#">Culture</a>
-        </nav>
-    </header>
 
-    <section class="main-content">
-        <img src="TA0042.jpg" alt="krishna">
-        <h2>Bhagavatham</h2>
-        <p>The Bhagavad Gita is a 700-verse Hindu scripture from the Indian epic Mahabharata, set in a conversation between Prince Arjuna and Lord Krishna. It provides philosophical guidance on life, duty, and the universe, focusing on concepts like dharma, karma, and moksha. The Gita emphasizes spiritual growth and self-realization, teaching individuals to integrate spirituality with life. It also provides personal counseling, emphasizing honesty and even-tempered behavior. </p>
-    </section>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#chapters">Chapters</a></li>
+      <li><a href="#teachings">Teachings</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Resources</a>
+        <div class="dropdown-content">
+          <a href="#introduction">Introduction</a>
+          <a href="#studyguide">Study Guide</a>
+          <a href="#versebyverse">Verse by Verse</a>
+          <a href="#interactive">Interactive Tools</a>
+          <a href="#videos">Videos</a>
+          <a href="#audio">Audio Recitations</a>
+          <a href="#glossary">Glossary</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </li>
+      <li><a href="#aboutus">About Us</a></li>
+    </ul>
+  </nav>
 
-    <section class="icons">
-        <div class="icon">
-            <img src="TA0017.jpg" alt="Pencil Icon">
-            <p>The Bhagavad Gita is a 700-verse Hindu scripture from the Indian epic Mahabharata, set in a conversation between Prince Arjuna and Lord Krishna.</p>
-        </div>
-        <div class="icon">
-            <img src="TA0028.jpg" alt="Bulb Icon">
-            <p>Dhritarashtra said, "What did my people and the sons of Pandu do when they had assembled together, eager for battle, on the holy plain of Kurukshetra, O Sanjaya?"</p>
-        </div>
-        <div class="icon">
-            <img src="TA0064.jpg" alt="Eye Icon">
-            <p>GitaVerse is an Open Course Platform focused on exploring the ancient and timeless wisdom of the Bhagavad Gita Our exclusive literature content allows you to delve into the verses of this classic and improve your philology skills on our platform.</p>
-        </div>
-    </section>
 </body>
 </html>

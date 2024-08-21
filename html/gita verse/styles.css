@@ -44,6 +44,31 @@ nav ul li a {
     font-size: 22px;
     font-weight: bold;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #030f1d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #ffda79;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #0056b3;
+  }
+
+  /* Show the dropdown menu when hovering */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .main-image {
     text-align: center;
@@ -67,11 +92,12 @@ nav ul li a {
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically */
     text-align: center;      /* Center text inside the div */
-    padding: 20px;           /* Add padding as needed */
+    padding: 20px; 
+    font-weight: bold;          /* Add padding as needed */
 }
 .description1 p {
     max-width: 80%;          /* Optional: Restrict width of text */
-    margin: 0 auto;         /* Center the paragraph */
+    margin: 0 auto;       /* Center the paragraph */
 }
 
 /* Container for Flexbox layout */
@@ -80,12 +106,14 @@ nav ul li a {
     justify-content: space-between;
     gap: 20px; /* Space between left and right content */
     padding: 20px; /* Padding around the container */
+    font-weight: bold;  
 }
 
 /* Style for left content */
 .content-left {
     flex: 1; /* Takes up remaining space */
-    max-width: 45%; /* Optional: Restrict width */
+    max-width: 45%;
+    text-align: center /* Optional: Restrict width */
 }
 
 /* Style for right content */
@@ -119,6 +147,7 @@ nav ul li a {
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
+    font-weight: bold;  
 }
 
 .controls, .actions, .translation-section {
@@ -158,9 +187,11 @@ nav ul li a {
 .button.click {
     background-color: #006D5B;
 }
-
+.button.play {
+    background-color: #095d8a;
+}
 .button.start {
-    background-color: #194D33;
+    background-color: #174e33;
 }
 
 .button.stop {
@@ -170,7 +201,7 @@ nav ul li a {
     background-color: #106910;
 }
 .button.translation {
-    background-color: #BD3B3B;
+    background-color: #561b1b;
 }
 
 .input {
@@ -192,9 +223,17 @@ nav ul li a {
     margin: 10px auto;
     height: 100px;
 }
+.display-area1 {
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    margin: 10px auto;
+    height: 200px;
+}
 .f1 {
     display: flex;
-    justify-content: flex-start; /* or justify-content: flex-start; */
+    justify-content: center; /* or justify-content: flex-start; */
     align-items: stretch;
     background: #030f1d;
     justify-items: flex-start; /* This property isn't needed for flex containers */
@@ -213,6 +252,7 @@ nav ul li a {
 .f1 b {
     color: #ffda79;
     word-spacing: normal;
+
 }
 .f1 img{
     width: 75px;
@@ -262,4 +302,29 @@ h2 {
     .description {
         margin-bottom: 20px;
     }
+}
+.count{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      flex-direction: column;
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+    th, td {
+        border: 1px solid rgb(229, 217, 217);
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;  
+}
+    h1 {
+        align-self: flex-start;
+        margin-left: 20px;
+  }
+}
+.chapter a{
+    color:#ffda79;
+    font-size: larger;
 }
