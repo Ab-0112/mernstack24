@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Layout</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #E6F5FF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #00B8E6;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .main-content {
+            padding: 20px;
+            background-color: #FFF100;
+        }
+
+        .main-content h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .main-content p {
+            text-align: justify;
+            margin: 0 10%;
+        }
+
+        /* Icons Section */
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 10%;
+        }
+
+        .icon {
+            text-align: center;
+            width: 100px;
+        }
+
+        .icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .main-content p {
+                margin: 0 5%;
+            }
+
+            .icons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MAGAZINE</h1>
+        <nav>
+            <a href="#">News</a>
+            <a href="#">Art</a>
+            <a href="#">Design</a>
+            <a href="#">Culture</a>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>Bhagavatham</h2>
+        <p>The Bhagavad Gita is a 700-verse Hindu scripture from the Indian epic Mahabharata, set in a conversation between Prince Arjuna and Lord Krishna. It provides philosophical guidance on life, duty, and the universe, focusing on concepts like dharma, karma, and moksha. The Gita emphasizes spiritual growth and self-realization, teaching individuals to integrate spirituality with life. It also provides personal counseling, emphasizing honesty and even-tempered behavior. </p>
+    </section>
+
+    <section class="icons">
+        <div class="icon">
+            <img src="https://via.placeholder.com/50" alt="Pencil Icon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="icon">
+            <img src="https://via.placeholder.com/50" alt="Bulb Icon">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        </div>
+        <div class="icon">
+            <img src="https://via.placeholder.com/50" alt="Eye Icon">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        </div>
+    </section>
+</body>
+</html>

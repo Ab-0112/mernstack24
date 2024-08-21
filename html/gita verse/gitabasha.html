@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap">
+
 </head>
 <body>
     <header>
@@ -27,6 +30,14 @@
         <div class="main-image">
             <img src="TA0057.jpg" alt="Krishna and Arjuna">
         </div>
+        <div class="sanskrit-verse">
+            <p><h2>अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम्।<br>
+                अभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय।।12.9।।</h2></p>
+        </div>
+        <div class="description">
+            <p>If you are unable to fix your mind steadily on Me, then seek to reach Me through the yoga of constant practice, O Arjuna.</p>
+        </div>
+
     </main>
     <div class="instructions">
         <h1>Shloka Pronunciation App</h1>
@@ -34,11 +45,16 @@
         <p>1. Enter the Chapter number and the shloka number, the display<br>
         will show the chosen Shloka and its meaning.<br>
         2. Click the Start button and pronounce the Shloka properly.<br>
-        3. It will show whether you pronounced The Shloka properly or not.</p>
+        3. It will show whether you pronounced The Shloka properly or not with the correct pronounciation.</p>
     </div>
 
     <div class = 'actions'>
         <input type="text" class="input" placeholder="Chapter Number">
+        <input type="text" class="input" placeholder="Shloka Number"><br>
+        <button class="button click">Click</button><br>
+    </div>
+    <div class="or-text">OR</div>
+    <div class = 'actions1'>
         <input type="text" class="input" placeholder="Shloka Number"><br>
         <button class="button click">Click</button><br>
     </div>
@@ -48,6 +64,7 @@
     <div class = 'actions'>
         <button class="button start">Start</button>
         <button class="button stop">Stop</button>
+        <button class="button repeat">Repeat</button>
     </div>
 
     <div class="display-area"></div>
@@ -57,7 +74,7 @@
     </div>
     <footer class="f1">
         <img src="logofooter.png" alt="logo">
-        <b><h2>GITAVERSE</h2></b><br>
+        <b><h2>GITAGYAAN</h2></b><br>
         <p>&copy;2024 Abhishek Murali</p>
     </footer>
 </body>
